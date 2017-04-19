@@ -103,8 +103,16 @@ footer {
 }
 
 /* Media Queries */
+@media screen and (max-width: 768px){
+    #corgi_box {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+
+/* Had to use some qwerky breaks on this, not sure how to do it properly */
 @media screen and (max-width: 425px) {
-  .st1 {
+  .st21 {
     display: none;
   }
   #new-h1 {
