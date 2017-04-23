@@ -10,12 +10,30 @@ body {
 
 
 /* Hover color changes */
-.icons:hover span {
-  color: #111;
+.icons:hover span,
+.icons:hover .st23,
+.icons:hover .st24,
+.icons:hover .st25 {
+    color: #111;
+    fill: #111;
 }
-.icons:hover .st0 {
-  fill: #111;
+
+#svg-contact,
+#svg-location,
+#svg-heart {
+  height: 13px;
+  width: 13px;
 }
+
+#svg-logo {
+  width: 140px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.st21 {
+    display: none;
+  }
 
 #container {
   max-width: 960px;
@@ -89,38 +107,12 @@ footer {
   color: #ba8058;
 }
 
-#svg-contact,
-#svg-location,
-#svg-heart {
-  height: 13px;
-  width: 13px;
-}
-
-#svg-logo {
-  width: 140px;
-  height: 120px;
-  margin: 0 auto;
-}
-
 /* Media Queries */
-@media screen and (max-width: 768px){
-    #corgi_box {
-        max-width: 450px;
-        margin: 0 auto;
-    }
-}
-
-/* Had to use some qwerky breaks on this, not sure how to do it properly */
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 425px) {
   .st21 {
+    display: block;
+  }
+  #new-h1 {
     display: none;
-  }
-  #new-h1 {
-    visibility: visible;
-  }
-}
-@media screen and (min-width: 426px) {
-  #new-h1 {
-     visibility: hidden;
   }
 }
